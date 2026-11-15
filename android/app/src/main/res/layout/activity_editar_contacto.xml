@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Editar Contacto"
+        android:textSize="24sp"
+        android:textColor="@color/primary"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/etEditNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etEditTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Telefono"
+        android:inputType="phone"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etEditLatitud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Latitud"
+        android:enabled="false"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etEditLongitud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Longitud"
+        android:enabled="false"
+        android:layout_marginBottom="32dp"/>
+
+    <Button
+        android:id="@+id/btnGuardarCambios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar Cambios"
+        android:backgroundTint="@color/primary"
+        android:textColor="@color/white"
+        android:layout_marginBottom="16dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarEditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+</LinearLayout>

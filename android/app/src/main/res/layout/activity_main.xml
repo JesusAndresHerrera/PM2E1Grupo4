@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nuevo Contacto"
+        android:textSize="24sp"
+        android:textColor="@color/primary"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Telefono"
+        android:inputType="phone"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etLatitud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Latitud"
+        android:enabled="false"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etLongitud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Longitud"
+        android:enabled="false"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnGrabarVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Grabar Video"
+        android:backgroundTint="@color/accent"
+        android:textColor="@color/white"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvRutaVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Video no grabado"
+        android:textColor="@color/gray"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnSubir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subir Contacto"
+        android:backgroundTint="@color/primary"
+        android:textColor="@color/white"
+        android:layout_marginBottom="16dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnIrLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver Lista de Contactos"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>
